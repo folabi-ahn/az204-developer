@@ -48,18 +48,21 @@ sed -i -e 's/Welcome/Welcome in staging slot/g' Pages/Index.cshtml
 echo "Dotnet publish new changes"
 dotnet publish -o $webappPublish
 
+# Move to publish folder
+echo "Moving to $webappPublish"
+cd $webappPublish/
+
 # Create zip
 echo "Creating zip"
-zip $webappPublish.zip $webappPublish/
+zip -r $webappPublish.zip .
 
 # Upload changes to staging slot
 echo "Upload changes to staging slot"
 az webapp deployment source config-zip -g $resourceGroup -n $webapp --src $webappPublish.zip -s staging
 
 # Swap slots
-# echo "Swaping slot production & staging"
-# az webapp deployment slot swap  -g $resourceGroup -n $webapp --slot staging \
-#     --target-slot production
+echo "Swaping slot production & staging"
+az webapp deployment slot swap  -g $resourceGroup -n $webapp -s staging --target-slot production
 
 # </FullScript>
 
