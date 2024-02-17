@@ -1,0 +1,12 @@
+In App Service, an app always runs in an App Service plan.
+
+Each App Service plan defines:
+- Operating System (Windows, Linux)
+- Region (West US, East US, etc.)
+- Number of VM instances
+- Size of VM instances (Small, Medium, Large)
+- Pricing tier (Free, Shared, Basic, Standard, Premium, PremiumV2, PremiumV3, Isolated, IsolatedV2)
+
+Shared compute : Free and Shared => (shared vm with other customers, design for dev and test)
+Dedicated compute : Basic, Standard, Premium, PremiumV2, PremiumV3
+Isolated : Isolated and IsolatedV2

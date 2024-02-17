@@ -1,0 +1,6 @@
+Scale up = get more cpu, memory, disk space (vertical scaling)
+Scale down
+Scale out = increase the number of vm instances that run your app (horizontal)
+Scale in
+
+Autoscaling works by adding or removing web servers
