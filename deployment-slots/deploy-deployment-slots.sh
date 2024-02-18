@@ -66,6 +66,8 @@ az webapp deployment slot swap  -g $resourceGroup -n $webapp -s staging --target
 
 # </FullScript>
 
+# echo "Moving to root"
+# cd
 # echo "Deleting $webappName"
 #rm -rf $webappName/
 
