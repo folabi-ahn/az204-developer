@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "upload-blob-to-container", "upload-blob-to-container\upload-blob-to-container.csproj", "{FCDF719D-048F-4E14-9869-DCF7CF90E33C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cosmos-db-csharp", "cosmos-db-csharp\cosmos-db-csharp.csproj", "{C5A02E64-B20A-47EF-86CD-4032404A7C10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCDF719D-048F-4E14-9869-DCF7CF90E33C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCDF719D-048F-4E14-9869-DCF7CF90E33C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCDF719D-048F-4E14-9869-DCF7CF90E33C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCDF719D-048F-4E14-9869-DCF7CF90E33C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5A02E64-B20A-47EF-86CD-4032404A7C10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5A02E64-B20A-47EF-86CD-4032404A7C10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5A02E64-B20A-47EF-86CD-4032404A7C10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5A02E64-B20A-47EF-86CD-4032404A7C10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
